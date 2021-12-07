@@ -249,54 +249,10 @@ export default function animation(scroller) {
             { color: '#fff' }
         )
     
-    // document.querySelector('.section-6') && gsap.timeline({
-    //     scrollTrigger: {
-    //         trigger: '.section-6',
-    //         start: '0% 50%',
-    //         // end: '0% 50%',
-    //         onToggle: ({isActive}) => {
-    //             const delay = 0;
-    //             // isActive ? 
-    //             //     document.querySelector('.section-6').classList.add('in-view') :
-    //             //     document.querySelector('.section-6').classList.remove('in-view') ;
-    //             isActive ? 
-    //                 gsap.to('.section-6', { backgroundColor:  '#fff',delay }) :
-    //                 gsap.to('.section-6', { backgroundColor:   '#26262C',delay}) ;
-    //             isActive ? 
-    //                 gsap.to('.section-6 .title', { color: '#26262C', delay}) :
-    //                 gsap.to('.section-6 .title', { color: '#fff', delay }) ;
-    //             isActive ? 
-    //                 gsap.to('.section-5', { backgroundColor: '#fff', delay}) :
-    //                 gsap.to('.section-5', { backgroundColor: '#26262C', delay }) ;
-    //         },
-    //         onEnter: () => {
-
-    //         }
-    //     },
-        
-    // });
-    // paralax('[alt="section-6__center-img"]');
     paralax('.section-4__left-bg, .section-3__right-bg', '#fff');
-    // paralax('.section-4__left-bg, .section-3__right-bg');
     paralax('.complex-1__item img, .complex-2__item img, .complex-3__item img, .complex-4__item img, .complex-5__item img');
     paralax('.complex-1__img, .complex-2__img, .complex-3__img, .complex-4__img, .complex-5__img');
     section7HoverImage();
-
-    
-    // gsap.timeline({
-    //     scrollTrigger: {
-    //         trigger: '.section-3',
-    //         scrub: true,
-    //         start: '20% bottom',
-    //         end: '40% bottom'
-    //     }
-    // })
-    // .from('.section-3', {
-    //     backgroundColor: '#fff'
-    // })
-    // .to('.section-2', {
-    //     backgroundColor: '#26262C'
-    // }, '<')
 
 
     function handleHeader(e) {
@@ -387,16 +343,6 @@ export default function animation(scroller) {
             }
         })
         .fromTo(footer, { backgroundColor: 'rgba(255,255,255,1)' }, { ease: 'power4.out', backgroundColor: 'rgba(255,255,255,0)' })
-        // ScrollTrigger.create({
-        //     trigger: footer,
-        //     start: '20% bottom',
-        //     onEnter: () => {
-        //         gsap.fromTo(footer, { backgroundColor: 'rgba(255,255,255,1)' }, { ease: 'power4.out', duration: 1.75, backgroundColor: 'rgba(255,255,255,0)' })
-        //     },
-        //     onLeaveBack: () => {
-        //         gsap.fromTo(footer, { backgroundColor: 'rgba(255,255,255,0)' }, { ease: 'power4.out', duration: 1.75, backgroundColor: 'rgba(255,255,255,1)' })
-        //     }
-        // })
     }
 
     if (!window.location.pathname.match(/complex/g)) {

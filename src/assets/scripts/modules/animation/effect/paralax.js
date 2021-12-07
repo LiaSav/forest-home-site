@@ -1,5 +1,9 @@
 import gsap from "gsap/all";
-
+/**
+ * Появление со шторкой картинки и последущий паралакс
+ * @param {string} selector - селекторы картинок для анимации
+ * @param {string} curtainColor - Цвет шторки появления
+ */
 export default function paralax(selector, curtainColor) {
     const paralaxImages = document.querySelectorAll(selector)
     paralaxImages.forEach((image) => {
